@@ -12,6 +12,21 @@
 </mat-toolbar>
 
 <main class="main" color="accent">
+  <div class="main__languages">
+    <span id="select-language"> {{ 'core.selectLanguage' | i18n }}:</span>
+    <mat-button-toggle-group
+      ariaLabelledby="select-language"
+      [hideSingleSelectionIndicator]="true"
+      (change)="useLanguage($event)"
+    >
+      @for (lang of languages(); track $index) {
+        <mat-button-toggle [value]="lang.code" [checked]="lang.checked">
+          {{ lang.name }}
+        </mat-button-toggle>
+      }
+    </mat-button-toggle-group>
+  </div>
+
   <router-outlet></router-outlet>
 </main>
 

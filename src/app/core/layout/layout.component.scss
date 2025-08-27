@@ -18,6 +18,13 @@
 .main {
   flex: 1;
   padding: 3rem;
+
+  &__languages {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 16px;
+  }
 }
 
 .footer {
