@@ -10,7 +10,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 export class I18nService {
   private readonly translateService = inject(TranslateService);
 
-  currentLanguage = toSignal(this.onLangChange$(), {
+  readonly currentLanguage = toSignal(this.onLangChange$(), {
     initialValue: FALLBACK_LANGUAGE
   });
 
