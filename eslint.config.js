@@ -51,14 +51,6 @@ export default defineConfig([
           style: 'camelCase'
         }
       ],
-      '@angular-eslint/component-selector': [
-        'error',
-        {
-          type: 'element',
-          prefix: 'app',
-          style: 'kebab-case'
-        }
-      ],
       '@typescript-eslint/explicit-function-return-type': 'error',
       '@typescript-eslint/prefer-readonly': 'error',
       '@typescript-eslint/no-inferrable-types': 'error',
@@ -97,6 +89,13 @@ export default defineConfig([
     rules: {
       '@angular-eslint/template/button-has-type': 'error',
       '@angular-eslint/template/no-positive-tabindex': 'error'
+    }
+  },
+  {
+    files: ['**/*.spec.ts'],
+    rules: {
+      '@typescript-eslint/unbound-method': 'off',
+      '@typescript-eslint/explicit-function-return-type': 'off'
     }
   }
 ]);
