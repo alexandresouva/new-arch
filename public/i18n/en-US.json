@@ -1,5 +1,14 @@
 {
   "core": {
-    "selectLanguage": "Select language"
+    "layout": {
+      "header": {
+        "menu": "Menu",
+        "account": "Account"
+      },
+      "footer": {
+        "copyright": "All rights reserved"
+      },
+      "selectLanguage": "Select language"
+    }
   }
 }

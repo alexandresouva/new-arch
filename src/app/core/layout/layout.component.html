@@ -1,19 +1,30 @@
 <mat-toolbar class="header" color="primary">
   <div class="header__left">
-    <button type="button" mat-icon-button matTooltip="Menu">
+    <button
+      type="button"
+      mat-icon-button
+      [matTooltip]="'core.layout.header.menu' | i18n"
+    >
       <mat-icon>menu</mat-icon>
     </button>
     <h1>NewArch</h1>
   </div>
 
-  <button type="button" mat-icon-button matTooltip="Account">
+  <button
+    class="header__account"
+    type="button"
+    mat-icon-button
+    [matTooltip]="'core.layout.header.account' | i18n"
+  >
     <mat-icon>account_circle</mat-icon>
   </button>
 </mat-toolbar>
 
 <main class="main" color="accent">
   <div class="main__languages">
-    <span id="select-language"> {{ 'core.selectLanguage' | i18n }}:</span>
+    <span id="select-language">
+      {{ 'core.layout.selectLanguage' | i18n }}:
+    </span>
     <mat-button-toggle-group
       ariaLabelledby="select-language"
       [hideSingleSelectionIndicator]="true"
@@ -31,7 +42,7 @@
 </main>
 
 <mat-toolbar class="footer" color="accent">
-  <span class="footer-copyright">
-    © {{ year }} NewArch. All rights reserved.
+  <span class="footer__copyright">
+    © {{ year }} NewArch. {{ 'core.layout.footer.copyright' | i18n }}.
   </span>
 </mat-toolbar>

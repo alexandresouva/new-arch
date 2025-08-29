@@ -1,5 +1,14 @@
 {
   "core": {
-    "selectLanguage": "Seleccione el idioma"
+    "layout": {
+      "header": {
+        "menu": "Menú",
+        "account": "Cuenta"
+      },
+      "footer": {
+        "copyright": "Todos los derechos reservados"
+      },
+      "selectLanguage": "Seleccione el idioma"
+    }
   }
 }
