@@ -4,7 +4,6 @@ import { FALLBACK_LANGUAGE, SUPPORTED_LANGUAGES } from '../languages';
 export function initTranslationFactory(i18nService: I18nService): () => void {
   return () => {
     const browserLang = i18nService.getBrowserLang();
-    console.log(browserLang);
     const isBrowserLangSupported = SUPPORTED_LANGUAGES.find(
       (lang) => lang === browserLang
     );

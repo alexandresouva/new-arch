@@ -51,6 +51,7 @@ export default defineConfig([
           style: 'camelCase'
         }
       ],
+      'no-console': 'error',
       '@typescript-eslint/explicit-function-return-type': 'error',
       '@typescript-eslint/prefer-readonly': 'error',
       '@typescript-eslint/no-inferrable-types': 'error',
