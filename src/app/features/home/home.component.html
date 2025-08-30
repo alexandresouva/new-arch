@@ -1,0 +1,25 @@
+<h2 class="title">{{ 'features.home.journeys' | i18n }}</h2>
+
+<div class="table">
+  <mat-table [dataSource]="journeys()" class="table__content">
+    @for (header of tableHeaders(); track $index) {
+      <ng-container [matColumnDef]="header.columnDef">
+        <mat-header-cell *matHeaderCellDef>
+          {{ header.label | i18n }}
+        </mat-header-cell>
+        <mat-cell *matCellDef="let element">
+          {{ element[header.columnDef] }}
+        </mat-cell>
+      </ng-container>
+    }
+
+    <mat-header-row *matHeaderRowDef="columns()"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: columns()"></mat-row>
+
+    <mat-row *matNoDataRow>
+      <td class="mat-cell" [attr.colspan]="columns().length">
+        {{ 'features.home.journeyNotFound' | i18n }}.
+      </td>
+    </mat-row>
+  </mat-table>
+</div>

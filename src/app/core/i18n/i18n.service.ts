@@ -26,8 +26,8 @@ export class I18nService {
     this.translateService.setFallbackLang(lang);
   }
 
-  translate(key: string): string | undefined {
-    return this.translateService.instant(key) as string | undefined;
+  translate(key: string): string {
+    return (this.translateService.instant(key) as string) ?? key;
   }
 
   getBrowserLang(): Language | undefined {

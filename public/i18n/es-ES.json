@@ -10,5 +10,26 @@
       },
       "selectLanguage": "Seleccione el idioma"
     }
+  },
+  "features": {
+    "home": {
+      "journeys": "Viajes",
+      "journeyNotFound": "No se encontraron viajes",
+      "table": {
+        "description": "Descripción",
+        "status": "Estado",
+        "creationDate": "Fecha de creación",
+        "creationUser": "Creado por",
+        "lastUpdateDate": "Fecha de actualización",
+        "lastUpdateUser": "Actualizado por"
+      }
+    }
+  },
+  "shared": {
+    "journeyStatus": {
+      "draft": "Borrador",
+      "active": "Activo",
+      "inactive": "Inactivo"
+    }
   }
 }

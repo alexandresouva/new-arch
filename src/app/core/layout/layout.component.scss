@@ -24,6 +24,7 @@
     justify-content: end;
     align-items: center;
     gap: 16px;
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -31,4 +32,10 @@
   justify-content: center;
   font-size: small;
   padding: 1rem;
+}
+
+@media (max-width: 900px) {
+  .main {
+    padding: 1.5rem;
+  }
 }

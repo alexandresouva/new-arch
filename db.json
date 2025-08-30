@@ -1,0 +1,111 @@
+{
+  "journeyList": [
+    {
+      "id": 1,
+      "description": "New Employee Onboarding",
+      "statusCode": 0,
+      "creationDate": "2025-01-01T10:00:00.000Z",
+      "creationUserEmail": "admin@email.com",
+      "lastUpdateDate": "2025-01-05T15:30:00.000Z",
+      "lastUpdateUserEmail": "manager@email.com"
+    },
+    {
+      "id": 2,
+      "description": "Customer Loan Approval",
+      "statusCode": 1,
+      "creationDate": "2025-02-01T09:00:00.000Z",
+      "creationUserEmail": "finance@email.com",
+      "lastUpdateDate": "2025-02-10T12:45:00.000Z",
+      "lastUpdateUserEmail": "supervisor@email.com"
+    },
+    {
+      "id": 3,
+      "description": "Data Migration Project",
+      "statusCode": 2,
+      "creationDate": "2025-03-01T08:00:00.000Z",
+      "creationUserEmail": "it-lead@email.com",
+      "lastUpdateDate": "2025-03-20T18:00:00.000Z",
+      "lastUpdateUserEmail": "cto@email.com"
+    }
+  ],
+  "journey": [
+    {
+      "id": 1,
+      "description": "New Employee Onboarding",
+      "statusCode": 0,
+      "creationDate": "2025-01-01T10:00:00.000Z",
+      "creationUserEmail": "admin@email.com",
+      "lastUpdateDate": "2025-01-05T15:30:00.000Z",
+      "lastUpdateUserEmail": "manager@email.com",
+      "processes": [
+        {
+          "id": "p-1001",
+          "typeCode": 0,
+          "version": "1.0.0",
+          "keys": [
+            { "key": "department", "value": "IT" },
+            { "key": "priority", "value": "high" }
+          ]
+        },
+        {
+          "id": "p-1002",
+          "typeCode": 1,
+          "version": "1.1.0",
+          "keys": [{ "key": "validator", "value": "HR" }]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "description": "Customer Loan Approval",
+      "statusCode": 1,
+      "creationDate": "2025-02-01T09:00:00.000Z",
+      "creationUserEmail": "finance@email.com",
+      "lastUpdateDate": "2025-02-10T12:45:00.000Z",
+      "lastUpdateUserEmail": "supervisor@email.com",
+      "processes": [
+        {
+          "id": "p-2001",
+          "typeCode": 2,
+          "version": "2.0.0",
+          "keys": [
+            { "key": "loanAmount", "value": "50000" },
+            { "key": "currency", "value": "USD" }
+          ]
+        },
+        {
+          "id": "p-2002",
+          "typeCode": 3,
+          "version": "2.1.0",
+          "keys": [{ "key": "executionDate", "value": "2025-02-15" }]
+        },
+        {
+          "id": "p-2003",
+          "typeCode": 4,
+          "version": "2.2.0",
+          "keys": [{ "key": "reviewer", "value": "compliance-team" }]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "description": "Data Migration Project",
+      "statusCode": 2,
+      "creationDate": "2025-03-01T08:00:00.000Z",
+      "creationUserEmail": "it-lead@email.com",
+      "lastUpdateDate": "2025-03-20T18:00:00.000Z",
+      "lastUpdateUserEmail": "cto@email.com",
+      "processes": [
+        {
+          "id": "p-3001",
+          "typeCode": 5,
+          "version": "3.0.0",
+          "keys": [
+            { "key": "storage", "value": "AWS-S3" },
+            { "key": "region", "value": "us-east-1" }
+          ]
+        }
+      ]
+    }
+  ]
+}

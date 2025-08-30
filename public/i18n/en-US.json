@@ -10,5 +10,26 @@
       },
       "selectLanguage": "Select language"
     }
+  },
+  "features": {
+    "home": {
+      "journeys": "Journeys",
+      "journeyNotFound": "Journey not found",
+      "table": {
+        "description": "Description",
+        "status": "Status",
+        "creationDate": "Creation Date",
+        "creationUser": "Creation User",
+        "lastUpdateDate": "Last Update Date",
+        "lastUpdateUser": "Last Update User"
+      }
+    }
+  },
+  "shared": {
+    "journeyStatus": {
+      "draft": "Draft",
+      "active": "Active",
+      "inactive": "Inactive"
+    }
   }
 }

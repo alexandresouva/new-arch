@@ -10,5 +10,26 @@
       },
       "selectLanguage": "Selecione o idioma"
     }
+  },
+  "features": {
+    "home": {
+      "journeys": "Jornadas",
+      "journeyNotFound": "Nenhuma jornada foi encontrada",
+      "table": {
+        "description": "Descrição",
+        "status": "Estado",
+        "creationDate": "Data de criação",
+        "creationUser": "Criado por",
+        "lastUpdateDate": "Última atualização",
+        "lastUpdateUser": "Atualizado por"
+      }
+    }
+  },
+  "shared": {
+    "journeyStatus": {
+      "draft": "Rascunho",
+      "active": "Ativo",
+      "inactive": "Inativo"
+    }
   }
 }
