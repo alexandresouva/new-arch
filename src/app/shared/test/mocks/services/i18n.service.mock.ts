@@ -1,7 +1,7 @@
-import { I18nService } from '../../../core/i18n/i18n.service';
+import { I18nService } from '@core/i18n/i18n.service';
 import { signal, WritableSignal } from '@angular/core';
 import { Language } from '@ngx-translate/core';
-import { FALLBACK_LANGUAGE } from '../../../core/i18n/languages';
+import { FALLBACK_LANGUAGE } from '@core/i18n/languages';
 
 export interface I18nServiceHandlers {
   currentLanguageSignal: WritableSignal<Language>;

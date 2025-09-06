@@ -1,6 +1,6 @@
 import { Component, computed, input } from '@angular/core';
 import { MatTableModule } from '@angular/material/table';
-import { I18nPipe } from '@app/core/i18n/pipes/i18n.pipe';
+import { I18nPipe } from '@core/i18n/pipes/i18n.pipe';
 import { JourneyListResponse } from '@shared/models/journey.model';
 import { TableHeader } from './models/table-header.model';
 

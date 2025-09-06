@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { LayoutComponent } from './layout.component';
 import { I18nService } from '../i18n/i18n.service';
-import { setupI18nServiceMock } from '../../shared/test/mock/i18n.service.mock';
+import { setupI18nServiceMock } from '@shared/test/mocks/services/i18n.service.mock';
 import { Language } from '@ngx-translate/core';
 import { MatButtonToggleChange } from '@angular/material/button-toggle';
 import { LANGUAGE_MAP } from '../i18n/languages';

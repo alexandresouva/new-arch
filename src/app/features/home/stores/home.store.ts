@@ -10,11 +10,11 @@ import {
   withMethods,
   withState
 } from '@ngrx/signals';
-import { JourneyListResponse } from '@app/shared/models/journey.model';
-import { Pagination } from '@app/shared/models/pagination.model';
-import { JourneyService } from '@app/shared/services/journey.service';
+import { JourneyListResponse } from '@shared/models/journey.model';
+import { Pagination } from '@shared/models/pagination.model';
+import { JourneyService } from '@shared/services/journey.service';
 
-type HomeStore = {
+export type HomeStore = {
   loading: boolean;
   journeys: JourneyListResponse[];
   meta: {

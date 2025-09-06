@@ -2,7 +2,7 @@ import { Component, computed, inject } from '@angular/core';
 import { HomeComponent } from './home.component';
 import { HomeStore } from './stores/home.store';
 import { tableHeadersData } from './constants/table-header';
-import { I18nDatePipe } from '@app/core/i18n/pipes/i18n-date.pipe';
+import { I18nDatePipe } from '@core/i18n/pipes/i18n-date.pipe';
 import { JourneyStatusPipe } from './pipes/journey-status.pipe';
 
 @Component({

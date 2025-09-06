@@ -1,5 +1,5 @@
 import { Injectable, Pipe, PipeTransform } from '@angular/core';
-import { JourneyStatusCode } from '@app/shared/models/journey.model';
+import { JourneyStatusCode } from '@shared/models/journey.model';
 
 @Pipe({
   name: 'journeyStatus',
