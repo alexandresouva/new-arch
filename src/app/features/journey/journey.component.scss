@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.list {
+  width: 200px;
+  min-height: 200px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fafafa;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+
+/* Quando a lista pode receber item */
+.list.destino.cdk-drop-list-receiving,
+.list.destino.cdk-drop-list-dragging {
+  border-color: #3f51b5;
+  background: #e8eaf6;
+}
+
+.item.destino.cdk-drop-list-receiving,
+.item.destino.cdk-drop-list-dragging {
+  border-color: burlywood;
+  background: #e8eaf6;
+}
+
+.item {
+  padding: 8px;
+  margin: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: grab;
+  z-index: 100;
+}
+
+/* Preview visível enquanto arrasta */
+.item.preview {
+  background: #c5cae9;
+  opacity: 0.9;
+  border-style: dashed;
+}
+
+/* Placeholder mantém o espaço no DOM */
+.item.placeholder {
+  background: transparent;
+  border: 1px dashed #bbb;
+  min-height: 32px;
+}
